@@ -1,0 +1,6 @@
+[ ! -d node_modules ] && ( npm install grunt; npm install grunt-cli;npm install )
+[ ! -d bower_components ] && ( grunt prod || grunt init )
+#NODE_ENV=production node index.js
+#NODE_ENV=production forever start index.js
+#npm start --production
+npm start --development
