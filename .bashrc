@@ -116,21 +116,26 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+export PATH="/usr/local/cobjet/bin/:$PATH"
 
-eval "$(direnv hook bash)"
-source ~/.rvm/scripts/rvm
-source ~/.gvm/scripts/gvm
-
-export PATH="$HOME/.pyenv/bin:$PATH"
+export node="$HOME/.local/n/bin/node"
 export PATH="$HOME/.local/n/bin:$PATH" # Add n to PATH for node scripting
-export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#source ~/.rvm/scripts/rvm
+#source ~/.gvm/scripts/gvm
+
+#export PATH="$HOME/.pyenv/bin:$PATH"
+#export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+
+#eval "$(direnv hook bash)"
 
 # local customizations
-export PATH="~/.local/bin:$PATH"
 [ ! -d ./log ] && mkdir ./log
 [ ! -d ./tmp ] && mkdir ./tmp
-[ ! -L workagent.com ] && ( ln -s www.workagent.com workagent.com) && echo "link created workagent.com"
-[[ -s "/home/www/.gvm/scripts/gvm" ]] && source "/home/www/.gvm/scripts/gvm"
+
+#[ ! -L workagent.com ] && ( ln -s www.workagent.com workagent.com) && echo "link created workagent.com"
+#[[ -s "/home/www/.gvm/scripts/gvm" ]] && source "/home/www/.gvm/scripts/gvm"
+
