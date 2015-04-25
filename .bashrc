@@ -139,3 +139,6 @@ export PATH="$HOME/.local/n/bin:$PATH" # Add n to PATH for node scripting
 #[ ! -L workagent.com ] && ( ln -s www.workagent.com workagent.com) && echo "link created workagent.com"
 #[[ -s "/home/www/.gvm/scripts/gvm" ]] && source "/home/www/.gvm/scripts/gvm"
 
+
+export NVM_DIR="/home/www/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -4,10 +4,12 @@
 .gem/*
 .gvm
 .rvm/*
+.nvm
 .pyenv/*
 .forever
 .bash_history
 .local
+.node-gyp
 .env
 */.env
 */*/.env
@@ -21,7 +23,10 @@
 .nave/*
 .ssh/*
 *.com
+.selected_editor
 .forever
 dev/*
 log/*
 tmp/*
+log
+private
