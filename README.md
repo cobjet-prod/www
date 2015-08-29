@@ -3,7 +3,10 @@ www home directory
 
 - install nvm:
 ```
-curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git
+checkout `git describe --abbrev=0 --tags`
+
+. ~/.nvm/nvm.sh
 ```
 
 

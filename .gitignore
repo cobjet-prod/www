@@ -28,5 +28,4 @@
 dev/*
 log/*
 tmp/*
-log
-private
+log/*
